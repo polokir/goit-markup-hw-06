@@ -325,13 +325,16 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+   
     height: 581px;
     width: 528px;
     background-color: var(--second-font-color);
     border-radius: 4px;
+}
+.modal-close{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 .modal-icon-close{
     width: 11px;
@@ -716,4 +719,144 @@ color: var(--hover-color);
     clip-path: insert(100%);
     clip: rect (0 0 0 0); 
     overflow: hidden;
+}
+
+.form-footer-container{
+    margin-left: 93px;
+    width: 570px;
+    
+}
+.form-footer-description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-font-color);
+    margin-bottom: 20px;
+}
+
+.footer-form{
+    display: flex;
+    width: 570px;
+    
+}
+
+.footer-form input[type='email']{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: inherit;
+    margin-right: 12px;
+    outline: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 16px;
+}
+
+.subscribe{
+    width: 200px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--second-font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send-icon{
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.modal-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    width: 448px;
+    margin-bottom: 12px;
+}
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#modal-input{
+    width: 448px;
+    height: 40px;
+}
+
+#modal-input-coment{
+    width: 448px;
+    height: 120px;
+}
+.agree{
+  position: absolute;
+    left: 0;
+}
+.check-icon{
+    width: 16px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+}
+
+.agree-link{
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.modal-agree{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.check-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border-radius: 1px;
+    fill: transparent;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    transition: fill 250ms var(--animation-timing-function), border-color 250ms var(--animation-timing-function);
+    margin-right: 8px;
+}
+
+.agree:checked + .check-icon{
+    fill: #2196F3;
 }
