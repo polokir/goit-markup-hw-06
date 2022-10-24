@@ -56,27 +56,27 @@
                 <form action="" class="form-modal">
                     <div class="modal-field">
                         <label for="name" class="field-label">Ім'я</label>
-                            <input type="text" id="modal-input" class="modal-input" name="name">
+                            <input type="text" required id="modal-input" class="modal-input" name="name">
                             <svg class="modal-icon">
                                 <use href="./img/symbol-defs.svg#person-icon"></use>
                             </svg>
                     </div>
                     <div class="modal-field">
-                        <label for="name" class="field-label">Телефон</label>
-                            <input type="tel" id="modal-input" class="modal-input" name="phone">
+                        <label for="phone" class="field-label">Телефон</label>
+                            <input type="tel" required id="modal-input" class="modal-input" name="phone">
                             <svg class="modal-icon">
                                 <use href="./img/symbol-defs.svg#phone-icon"></use>
                             </svg>
                     </div>
                     <div class="modal-field">
-                        <label for="name" class="field-label">Пошта</label>
-                            <input type="email" id="modal-input" class="modal-input" name="e-mail">
+                        <label for="e-mail" class="field-label">Пошта</label>
+                            <input type="email" required id="modal-input" class="modal-input" name="e-mail">
                             <svg class="modal-icon">
                                 <use href="./img/symbol-defs.svg#email-icon"></use>
                             </svg>
                     </div>
                     <div class="modal-field">
-                        <label for="name" class="field-label">Коментар</label>
+                        <label for="coment" class="field-label">Коментар</label>
                             <textarea cols="30" rows="10" type="text" id="modal-input-coment" class="modal-input-coment" name="coment" placeholder="Введіть текст"></textarea>
                     </div>
                          <label class="check option">
@@ -460,7 +460,7 @@
                     <form action="" class="footer-modal">
                         <div class="footer-form">
                             <label for="mail"></label>
-                                <input type="email" name="email" id="footer-email" placeholder="E-mail">
+                                <input type="email" required name="email" id="footer-email" placeholder="E-mail">
                                 <button class="subscribe" type="submit">Підписатися
                                     <svg class="send-icon">
                                         <use href="./img/symbol-defs.svg#icon-send"></use>
