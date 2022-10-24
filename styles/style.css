@@ -80,6 +80,7 @@ button{
 } 
  
 .header-link{ 
+    font-family: 'Roboto';
     display: block;
     color: var(--main-color);
     font-weight: 500;
@@ -136,6 +137,7 @@ button{
 } 
  
 .contact-link{ 
+    font-family: 'Roboto', sans-serif; 
     text-decoration: none; 
     color: var(--contact-color);
     font-weight: 500;
@@ -340,11 +342,6 @@ button{
     width: 11px;
     height: 11px;
 }
-body {
-    margin: 0;
-    padding: 25px;
-    font-family: sans-serif;
-  }
   
   /* Option */
   
@@ -410,7 +407,6 @@ body {
     border-color: var(--hover-color);
   }
   .label-check{
-    font-family:'Roboto';
     margin-left: 8px;
     cursor: pointer;
     color: var(--contact-color);
@@ -806,7 +802,6 @@ color: var(--hover-color);
     
 }
 .form-footer-description{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -833,7 +828,7 @@ color: var(--hover-color);
     margin-right: 12px;
     outline: none;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -846,7 +841,7 @@ color: var(--hover-color);
 .subscribe{
     width: 200px;
     height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -866,7 +861,7 @@ color: var(--hover-color);
 }
 
 .modal-title{
-    font-family: 'Roboto';
+
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -926,7 +921,7 @@ textarea{
     color: var(--hover-color);
 }
 .field-label{
-    font-family: 'Roboto';
+    
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.666;
@@ -942,7 +937,7 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
