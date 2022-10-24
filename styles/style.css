@@ -340,6 +340,85 @@ button{
     width: 11px;
     height: 11px;
 }
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: sans-serif;
+  }
+  
+  /* Option */
+  
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+   
+  
+  .check__input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  
+  .check__box {
+    position: relative;
+    width: 16px;
+    height:15px;
+    overflow: hidden;
+    border-radius: 1px;
+    background-color: inherit;
+    border: 2px solid var(--main-color);
+    transition: background-color var(--transition-duration) var(--animation-timing-function),
+    border-color var(--transition-duration) var(--animation-timing-function);
+
+  }
+  .check-icon{
+    width: 13px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 35px;
+    left:12px;
+    fill: var(--main-color);
+    transition: fill var(--transition-duration) var(--animation-timing-function);
+  }
+  .modal-input:hover + .modal-icon,
+  .modal-input:focus + .modal-icon{         
+    fill: var(--hover-color);
+  }
+  /* Checked */
+  
+  .check__input:checked + .check__box {
+    background-color: var(--hover-color);
+    border-color:  var(--hover-color);
+  }
+  
+  /* Focused */
+  
+  .check__input:focus + .check__box {
+    border-color: var(--hover-color);
+  }
+  .label-check{
+    font-family:'Roboto';
+    margin-left: 8px;
+    cursor: pointer;
+    color: var(--contact-color);
+    line-height: 1.714;
+    display: flex;
+    align-items: center;
+}
+
 .close{
     width: 30px;
     height: 30px;
@@ -804,59 +883,75 @@ color: var(--hover-color);
     align-items: center;
 }
 .modal-field{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-#modal-input{
-    width: 448px;
+.modal-input{
+    padding: 11px 12px;
+    padding-left: 42px;
     height: 40px;
-}
-
-#modal-input-coment{
-    width: 448px;
-    height: 120px;
-}
-.agree{
-  position: absolute;
-    left: 0;
-}
-.check-icon{
-    width: 16px;
-    height: 15px;
-    display: flex;
-    position: absolute;
-}
-
-.agree-link{
-    color: var(--hover-color);
-    text-decoration: underline;
-}
-
-.modal-agree{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.check-box{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
-    border-radius: 1px;
-    fill: transparent;
+    border-radius: 4px;
     cursor: pointer;
-    border: 2px solid var(--main-color);
-    transition: fill 250ms var(--animation-timing-function), border-color 250ms var(--animation-timing-function);
-    margin-right: 8px;
+    color: var(--contact-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: var(--hover-color);
+    transition: border-color var(--transition-duration) var(--animation-timing-function);
+    
 }
+textarea{
+    resize: none;
+}
+.modal-input:hover,
+.modal-input:focus{
+    border-color: var(--hover-color);
+}
+.modal-input-coment{
+    padding: 12px 16px;
+    height: 120px;
+    cursor: pointer;
+    color: var(--contact-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: var(--hover-color);
+    transition: border-color var(--transition-duration) var(--animation-timing-function);
+}
+.modal-input-coment:hover,
+.modal-input-coment:focus{
+    border-color: var(--hover-color);
+}
+.modal-link{
+    color: var(--hover-color);
+}
+.field-label{
+    font-family: 'Roboto';
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.666;
+    letter-spacing: 0.01em;
+    color: var(--contact-color);
 
-.agree:checked + .check-icon{
-    fill: #2196F3;
+}
+.modal-button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--hover-color);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.875;
+    color: var(--second-font-color);
+    transition: box-shadow var(--transition-duration) var(--animation-timing-function);
+}
+.modal-button:hover,
+.modal-button:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
